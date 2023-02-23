@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
           closeModalBtn = overlay.querySelector('svg');
 
     openModalBtn.addEventListener('click', () => {
-        overlay.className = 'overlay show';
+        overlay.classList.add('show');
     })
 
     closeModalBtn.addEventListener('click', () => {
-        overlay.className = 'overlay animated';
+        overlay.classList.remove('show');
     })
 });
 
